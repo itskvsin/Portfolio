@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-image: linear-gradient(90deg,rgb(231, 229, 229),rgb(162, 159, 159),rgb(126, 123, 123));
@@ -12,6 +13,8 @@ nav li{
     height: 50px;
 }
 nav ul{
+    position: fixed;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -23,13 +26,14 @@ nav ul li{
     list-style: none;
 }
 nav ul li a{
+   
     padding: 0px 30px;
     height: 100%;
     text-decoration: none;
     color: black;
 }
-nav ul li:hover{
-    color: white;
+nav ul li a:hover{
+    color: rgb(72, 68, 68);
     text-decoration: underline;
 }
 .responsive-nav{
@@ -41,7 +45,7 @@ nav ul li:hover{
     height: 100vh;
     width: 270px;
     z-index:999;
-    background-color: rgba(156, 156, 156, 0.367);
+    background-color: rgba(156, 156, 156, 0.853);
     box-shadow: -10px 0 10px (0,0,0,0.1);
     display: none;
     flex-direction: column;
@@ -55,8 +59,9 @@ nav ul li:hover{
     width: 100%;
 }
 .responsive-nav li:hover{
+    border-radius:8px ;
     text-decoration: underline;
-    background-color: #7e7b7b;
+    background-color: #7e7b7bce;
 }
 .menu-button{
     display: none;
@@ -75,9 +80,81 @@ nav ul li:hover{
     }
 }
 
+h2 , .hello {
+    text-align: center;
+    margin: 0px auto;
+    font-size: 50px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    animation: text 1.4s;
+}
+@keyframes text{
+    0%{transform:translatey(-100%) ;}
+    100%{transform: translatey(0%);}
+}
+@media(max-width:590){
+    #about{
+        padding: 60px;
+        height: 40vh;
+    }
+}
+.container{
+    border: 1px solid white;
+}
+.container .content{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.container .content .image-text{
+    object-fit:fill;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-align: center;
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 4px rgb(128, 128, 128);
+    font-size: 20px;
+}
+.container .content .image-text a{
+    color: #7e7b7bce;
+    text-decoration: none;
+}
+.container .content img{
+    border-radius: 8px;
+    width: 350px;
+    height: 300px;
+    transition: 1s;
+}
+.container .content .image-text img:hover{
+    width: 480px;
+    /* filter: blur(0.9px); */
+    transform: translateY(-4%);
+}
+@media(max-width:1075){
+
+}
 
 
 
 
+.name-svg , .email-svg{
+    /* position: absolute;
+    z-index: 2;
+    top: 20px; */
+    width: 10px;
 
+}
 
+.contact-icon{
+    width: 20px;
+}
