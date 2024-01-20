@@ -162,15 +162,18 @@ hr{
     width: 20%;
     margin-bottom: 8px;
 }
+.center{
+    font-size: 2rem;
+}
 .form-image{
     padding: 10px;
     display: flex;
     margin: auto;
     justify-content: space-between;
-    
 }
 .left-form{
-    width: 30vw;
+    margin: 50px;
+    width: 40vw;
 }
 .flex-input{
     background-color: grey;
@@ -178,13 +181,16 @@ hr{
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin: 40px;
-    padding: 30px;
+    border-radius: 10px;
 }
 input , textarea , button{
-    padding: 8px;
-    margin: 8px;
+    margin: 8px 8px 8px 0px;
     border-radius: 8px;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: 18px;
+    padding-left: 4px;
+    padding-bottom: 4px;
 }
 
 input:active , textarea:active , button:active{
@@ -192,18 +198,36 @@ input:active , textarea:active , button:active{
     border: none;
 }
 
+.right-form{
+    width: 50vw;
+}
+.center1{
+    width: 400px;
+    margin-left:200px ;
+}
 
 .name-svg , .email-svg{
     position: relative;
-    z-index: 2;
-    top: -30px;
-    right: -90%;
-    width: 10px;
+  z-index: 2;
+  top: -33px;
+  right: -94%;
+  width: 13px;
 
 }
 .name-svg:active , .email-svg:active{
     color: blue;
 }
+.network{
+    width: 100%;
+    height: 60px;
+    margin: 10px 70px;
+}
+
 .contact-icon{
-    width: 20px;
+    width: 24px;
+    margin: 20px;
+}
+.contact-icon:hover{
+    color: blue;
+    width: 24.5px;
 }
