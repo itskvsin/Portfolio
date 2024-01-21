@@ -32,31 +32,37 @@
 
     <!-- Main Page -->
     <main id="about">
-        <p class="hello">Hello I Am ,</p>
-        <h2>Kevin B. Solanki</h2>
+        <div class="left-part">
+            <div class="half-circle"></div>
+            <img src="assets/Suit-removebg-preview.png" alt="My Photo">
+        </div>
+        <div class="right-part">
+            <p class="hello">Hello I Am ,</p>
+            <h2>Kevin B. Solanki</h2>
+            <span id="element"></span>
+        </div>
+        
     </main>
 
     <!-- Projects Page -->
     <div  class="container">
         <div id="projects" class="content">
             <div class="image-text hover1">
-                <img src="assets/Screenshot (615).png" alt="kanye's playlist image">
+                <a href="https://itskvsin.github.io/Kanyes-Music-Player/"><img src="assets/Screenshot (615).png" alt="kanye's playlist image"></a>
                 <p><a href="https://itskvsin.github.io/Kanyes-Music-Player/">Kanye's Music Player</a></p>
             </div>
             <div class="image-text hover2">   
-                <img src="assets/Screenshot (617).png" alt="Photo Gallery image">
+                <a href="#"><img src="assets/Screenshot (617).png" alt="Photo Gallery image"></a>
                 <p><a href="#">Photo Gallery</a></p>
             </div>
             <div class="image-text hover3">
-                <img src="assets/Screenshot (614).png" alt="Anime Gallery Image">
+                <a href="https://itskvsin.github.io/My-Html-File/"><img src="assets/Screenshot (614).png" alt="Anime Gallery Image"></a>
                 <p><a href="https://itskvsin.github.io/My-Html-File/">Anime Gallery</a></p>
             </div>
         </div>
     </div>
 
-    <!-- Contact Form -->
-    
-        
+    <!-- Contact Form -->        
         <div id="contact" class="form-image">
         <div class="left-form">
             <form class="flex-input" action="https://api.web3forms.com/submit" method="POST">
@@ -88,6 +94,13 @@
 
     <!-- Script for responsive Navigation Bar -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [ 'Office Tools Master', 'C programmer', 'Web Developer'],
+          typeSpeed: 40,
+        });
+      </script>
 </body>
 </html>
 <!-- <i class="fa-brands fa-square-github"></i>
